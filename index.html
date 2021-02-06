@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio Maquetación</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/ed1f8d52ec.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        click1=0;
+        click2=0;
+        click3=0;
+        click4=0;
+        click5=0;
+            function colormegusta1(){
+              if(click1 %2 ==0){
+                document.getElementById('colormegusta1').style.color="#FF2323";
+                click1++;
+              }else{
+                document.getElementById('colormegusta1').style.color="#ffffff";
+                click1++;
+              }
+            };
+            function colormegusta2(){
+              if(click2 %2 ==0){
+                document.getElementById('colormegusta2').style.color="#FF2323";
+                click2++;
+              }else{
+                document.getElementById('colormegusta2').style.color="#ffffff";
+                click2++;
+              }
+            };
+            function colormegusta3(){
+              if(click3 %2 ==0){
+                document.getElementById('colormegusta3').style.color="#FF2323";
+                click3++;
+              }else{
+                document.getElementById('colormegusta3').style.color="#ffffff";
+                click3++;
+              }
+            };
+            function colormegusta4(){
+              if(click4 %2 ==0){
+                document.getElementById('colormegusta4').style.color="#FF2323";
+                click4++;
+              }else{
+                document.getElementById('colormegusta4').style.color="#ffffff";
+                click4++;
+              }
+            };
+            function colormegusta5(){
+              if(click5 %2 ==0){
+                document.getElementById('colormegusta5').style.color="#FF2323";
+                click5++;
+              }else{
+                document.getElementById('colormegusta5').style.color="#ffffff";
+                click5++;
+              }
+            };
+        </script>
+    </head>
+<body>
+    <div id="contador">
+        <nav class="menuprincipal">
+            <div class="logotipo">
+                <image class="imagenlogotipo" src="imagen/Pc's%20falcon.png"> 
+                </image>
+            </div>
+            <div class="menu">
+                <ul class="menu-ul">
+                    <li class="menu-li"><i class="fas fa-home"></i><a class="menuletras" href="">Inicio</a></li>
+                    <li class="menu-li"><i class="fas fa-users"></i><a class="menuletras" href="">Quienes somos</a></li>
+                    <li class="menu-li"><i class="fas fa-cubes"></i><a class="menuletras" href="">Categorías</a></li>
+                    <li class="menu-li"><i class="fas fa-shopping-cart"></i><a class="menuletras" href="">Cesta</a></li>
+                    <li class="menu-li"><i class="fas fa-house-user"></i><a class="menuletras" href="">Iniciar sesion</a></li>
+                </ul>
+                <ul class="menu-responsive-ul">
+                    <div class="menu-responsive-button">
+                        <div class="menu-responsive-button-button fas fa-bars"></div>
+                    </div>
+                    <div class="menu-responsive-licontainer">
+                        <li class="menu-responsive-li"><i class="fas fa-home"></i><a class="menuletras" href="">Inicio</a></li>
+                        <li class="menu-responsive-li"><i class="fas fa-users"></i><a class="menuletras" href="">Quienes somos</a></li>
+                        <li class="menu-responsive-li"><i class="fas fa-cubes"></i><a class="menuletras" href="">Categorías</a></li>
+                        <li class="menu-responsive-li"><i class="fas fa-shopping-cart"></i><a class="menuletras" href="">Cesta</a></li>
+                        <li class="menu-responsive-li"><i class="fas fa-house-user"></i><a class="menuletras" href="">Iniciar sesion</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div class="cuerpo">
+            <image src="imagen/Pcs%20falconn.png" class="imagencuerpo"></image>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagen/imagen1pc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Solicitar Presupuesto</h5>
+                      <p class="card-text">Puede solicitar su presupuesto sin compromiso, nos ajustaremos a sus necesidades.</p>
+                      <a href="#" class="btn-btn-primary">Solicitar</a>
+                      <a class="megusta"><i id="colormegusta1" onclick="colormegusta1()" class="fas fa-heart"></i></a>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="imagen/imagen2pc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Procesadores</h5>
+                      <p class="card-text">Saber que procesador te conviene mas dependiendo de las necesidades que tengas.</p>
+                      <a href="#" class="btn-btn-primary">Saber Más</a>
+                      <a class="megusta"><i id="colormegusta2" onclick="colormegusta2()" class="fas fa-heart"></i></a>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="imagen/imagen3pc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Flujos de Aire</h5>
+                      <p class="card-text">Algo que no se suele tener en cuenta a la hora de montar un PC pero que es una de las cosas más importantes a la hora de ello.</p>
+                      <a href="#" class="btn-btn-primary">Saber Más</a>
+                      <a class="megusta"><i id="colormegusta3" onclick="colormegusta3()" class="fas fa-heart"></i></a>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="imagen/imagen4pc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Memorias RAM</h5>
+                      <p class="card-text">Cuantos GB y que herzios necesitas.</p>
+                      <a href="#" class="btn-btn-primary">Saber Más</a>
+                      <a class="megusta"><i id="colormegusta4" onclick="colormegusta4()" class="fas fa-heart"></i></a>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="imagen/imagen5pc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Refrigeraciones Líquidas</h5>
+                      <p class="card-text">Lo más efectivo ante las altas temperaturas.</p>
+                      <a href="#" class="btn-btn-primary">Saber Más</a>
+                      <a class="megusta"><i id="colormegusta5" onclick="colormegusta5()" class="fas fa-heart"></i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="videofondo">
+              <video  class="video" autoplay controls>
+                <source class="videosource" src="video/torre.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="grid-container">
+              <div class="grid-item">
+                <image src="imagen/imagen4pc.jpg" class="grid-item-imagen"></image>
+              </div>
+              <div class="grid-item">
+                <image src="imagen/imagen6pc.jpg" class="grid-item-imagen"></image>
+              </div>
+              <div class="grid-item">
+                <image src="imagen/imagen2pc.jpg" class="grid-item-imagen"></image>
+              </div>
+            </div>
+        </div>
+        <div class="pie" >
+            <p class="parrafopie">Pc's Falcon. Todos los derechos reservados</p>
+            <div class="iconos">
+                <i class="fa fa-facebook" id="icono"></i>
+                <i class="fa fa-twitter" id="icono"></i>
+                <i class="fa fa-instagram" id="icono"></i>
+            </div>
+        </div>
+    </div>
+    </body> 
+
+</html> 

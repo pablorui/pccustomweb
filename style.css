@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@font-face  {
+    font-family: "Sansita";
+    src: url("Sansita.ttf");
+}
+
+* {box-sizing: border-box;}
+
+div {
+  
+  margin: 0px;
+  padding: 0px;
+    overflow: hidden;
+    font-family:"Verdana";
+}
+
+.menuprincipal {
+    display: inline-block;
+    background: #000000;
+    color: #F0F3F5;
+    width: 100%;
+    height: auto;
+}
+
+.menu-responsive-ul{
+  display: none;
+}
+
+.menu-li{
+  display: inline-block;
+}
+
+.menu-li:hover{
+  color: #B8B8B8 ;
+}
+
+.menuletras{
+  color: #F0F3F5;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.menuletras:hover{
+  color: #B8B8B8;
+}
+
+.logotipo{
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  padding: 0;
+  margin: 0;
+}
+
+.imagenlogotipo{
+  width: 110px;
+  height: 110px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  margin: 30px;
+  float: right;
+  width: auto;
+  height: auto;
+}
+
+
+.cuerpo {
+    height: 100%;
+    background-color: #F0F3F5;
+}
+
+.imagencuerpo{
+  width: 100%;
+  height: 100%;
+}
+
+.pie  {
+    height: auto;
+    background-color: #000000;
+}
+
+.parrafopie {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.iconos{
+  display: flex;
+  margin: 10px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+#icono{
+  padding: 5px;
+  color: white;
+  margin: 5px;
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  margin: 25px;
+  padding: 5px;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  border-radius: 15px ;
+  background: rgba(0, 0, 0, 0.918);
+  border: 6px solid #ffdb3a ;
+  color: #F0F3F5;
+  box-shadow: 2px 4px 15px 0 rgb(119, 119, 119);
+  
+}
+
+.card:hover {
+  -webkit-transform:scale(1.05);
+  -moz-transform:scale(1.05);
+  -ms-transform:scale(1.05);
+  -o-transform:scale(1.05);
+  transform:scale(1.05);
+}
+
+.card-img-top{
+  width: 100%;
+  height: auto;
+}
+
+.card-title{
+  font-size: 20px;
+}
+
+.btn-btn-primary{
+  color: #FFFFFF;
+}
+
+.btn-btn-primary:hover{
+  color: rgb(161, 161, 161);
+}
+
+.grid-container{
+  height: 100%;
+  width: auto;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(1,auto);
+  grid-template-columns: repeat(3,1fr);
+}
+
+.grid-item{
+  width: 100%;
+  height: auto;
+}
+
+.grid-item-imagen{
+  width: 100%;
+  height: 100%;
+}
+
+.videofondo{
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-content: center;
+}
+
+.video{
+  text-align: center;
+  width: 800px;
+  height: auto;
+}
+
+.megusta{
+  color: #ffffff;
+  font-size: 30px;
+  padding: 5px;
+  width: 60px;
+  height: 70px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+.megusta:hover{
+  color: #f89999;
+  font-size: 30px;
+  padding: 5px;
+  width: 60px;
+  height: 70px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 800px){
+  .menu-ul{
+    display: none;
+  }
+
+  .menu-responsive-ul{
+    display: block;
+    width: 100%;
+    margin-top: 110px;
+  }
+
+  .menu-responsive-li{
+    width: 100%;
+    padding: 9px;
+  }
+
+  .menu-responsive-li i{
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+    width: 30px;
+  }
+
+  .menu-responsive-button{
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    margin-top: -90px;
+    z-index: 100;
+  }
+
+  .menu-responsive-buttonbutton{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+  }
+
+  .menuprincipal {
+    width: 100%;
+    height: 110px;
+  }
+
+  .menu {
+    margin: 15px;
+    float: right;
+    width: auto;
+    height: auto;
+  }
+
+  .menu-responsive-licontainer{
+    position: relative;
+    top: -1000px;
+    height: 190px;
+    width: auto;
+    background: #000000;
+    transition: all 1s;
+    z-index: 1;
+  }
+
+  .menu-responsive-ul:hover > .menu-responsive-licontainer{
+    top:-15px;
+  }
+}
